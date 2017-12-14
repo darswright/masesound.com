@@ -1,3 +1,9 @@
+html {
+    font-size: 1.1em;
+    line-height: 1.4;
+    height: 100%;
+}
+
 body {
     background: url(../assets/thankyou-portrait-575.jpg) no-repeat top #071c27;
     background-size: cover;
@@ -84,9 +90,14 @@ footer a {
 .social svg {
     fill: white;
     width: 1.4em;
+    vertical-align: middle;
 }
 
 .footer-logo {
     align-self: center;
     text-align: right;
+}
+
+.footer-logo img {
+    vertical-align: middle;
 }
