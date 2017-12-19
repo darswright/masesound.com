@@ -1,3 +1,40 @@
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
 html {
     box-sizing: border-box;
     height: 100%;
@@ -93,11 +130,28 @@ header {
     color: purple;
 }
 
+@media (min-width: 576px) {
+    footer {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 992px) {
+    footer {
+        font-size: 1.7em;
+    }
+}
+
 footer {
     background: #071c27;
     color: white;
     display: flex;
-    flex-shrink: 0;
     text-align: center;
 }
 
@@ -120,14 +174,8 @@ footer a {
 .social svg {
     fill: white;
     width: 1.4em;
-    vertical-align: middle;
 }
 
 .footer-logo {
-    align-self: center;
     text-align: right;
-}
-
-.footer-logo img {
-    vertical-align: middle;
 }
