@@ -152,6 +152,7 @@ footer {
     background: #071c27;
     color: white;
     display: flex;
+    flex-shrink: 0;
     text-align: center;
 }
 
@@ -177,5 +178,6 @@ footer a {
 }
 
 .footer-logo {
+    align-self: center;
     text-align: right;
 }
