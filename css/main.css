@@ -98,12 +98,11 @@ header {
 
 .intro input,
 .intro button {
-    /*background: #c06d57;
-    background: rgba(192, 109, 87, .6);*/
     background: none;
-    border: solid 3px #FFF;
+    border: solid 3px white;
     border-radius: 0;
     box-sizing: border-box;
+    box-shadow: none;
     color: white;
     margin: 0.15em 0;
     padding: 0.5em 1em;
@@ -113,6 +112,10 @@ header {
 .intro button {
     background: white;
     color: black;
+}
+
+.intro button:hover {
+    cursor: pointer;
 }
 
 .intro input::placeholder {
@@ -221,7 +224,6 @@ footer a {
 }
 
 .social {
-    align-self: center;
     text-align: left;
 }
 
@@ -231,6 +233,5 @@ footer a {
 }
 
 .footer-logo {
-    align-self: center;
     text-align: right;
 }
