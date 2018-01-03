@@ -9,6 +9,12 @@ html {
     line-height: 1.4;
 }
 
+html,
+body,
+.site {
+    height: 100%;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -56,11 +62,16 @@ button {
 }
 
 .site {
+    display: flex;
+    flex-direction: column;
+
     margin: 0 auto;
     max-width: 1400px;
 }
 
 header {
+    flex: 1 0 auto;
+
     background: url(../assets/hero-portrait-575.jpg) no-repeat top #071c27;
     background-size: cover;
     color: white;
@@ -206,6 +217,8 @@ header {
 
 
 footer {
+    flex-shrink: 0;
+
     background: #071c27;
     color: white;
     display: flex;

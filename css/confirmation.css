@@ -48,6 +48,8 @@ body {
     flex-direction: column;
     font-family: 'Roboto', sans-serif;
     height: 100%;
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
 @media (orientation: landscape) {
@@ -84,11 +86,6 @@ body {
     body {
         background-image: url(../assets/thankyou-landscape-1400.jpg);
     }
-}
-
-.site {
-    margin: 0 auto;
-    max-width: 1400px;
 }
 
 header {
